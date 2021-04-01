@@ -65,4 +65,4 @@ jobs:
 ```
 <br /><br />
 # [ดูตัวอย่างที่นี่](https://github.com/mikepenz/release-changelog-builder-action/releases/tag/v0.9.0)
-^_^
+^_^ ^o^
