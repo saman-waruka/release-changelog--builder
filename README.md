@@ -66,3 +66,8 @@ jobs:
 <br /><br />
 # [ดูตัวอย่างที่นี่](https://github.com/mikepenz/release-changelog-builder-action/releases/tag/v0.9.0)
 ^_^ ^o^
+<br /><br />
+ปล. ถ้าเจอ error หน้าตาแบบนี้ไ่ต้องตกใจ จะเป็นเฉพาะ push tag แรก 
+หลังจาก tag ที่ 2 ไป ก็จะไม่มี error นี้ 
+<br /><br />
+![alt text](https://res.cloudinary.com/dxqn5gftg/image/upload/v1617276036/Screen_Shot_2564-04-01_at_18.17.48_svelo8.png)
