@@ -23,7 +23,7 @@ jobs:
           body: ${{steps.github_release.outputs.changelog}}
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          
+  testecho:        
     steps:
       - name: Echo
         run: echo HelloWorld555
