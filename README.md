@@ -6,8 +6,10 @@
 - feature
 - fix 
 - dependencies
+### ปล. Add Label โดยการไปที่ Repository  > เลือก Pull Request  > คลิกที่ Label <br /><br />
 
-ตอนที่เรา PR ก็ให้ใส่ label ไว้ด้วย ตอน push tag Release ก็จะมีสรุปให้เราด้วยว่า release นี้ มี feature อะไร fix อะไร  ที่ PR ไหน 
+
+### ตอนที่เรา PR ก็ให้ใส่ label ไว้ด้วย ตอน push tag Release ก็จะมีสรุปให้เราด้วยว่า release นี้ มี feature อะไร fix อะไร  ที่ PR ไหน 
 [ดูตัวอย่างที่นี่](https://github.com/mikepenz/release-changelog-builder-action/releases/tag/v0.9.0)
 <br /><br />
 
