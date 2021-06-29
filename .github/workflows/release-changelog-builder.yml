@@ -24,6 +24,7 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
-    echopath:
+  echopath:
+    steps:
       - name: Cat path 
         run: cat ~/.github/config-release-changelog-builder.json
