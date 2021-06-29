@@ -14,5 +14,3 @@ jobs:
         run: ls 
       - name: Cat file 2  
         run: cat config-release-builder/config.json
-      - name: Cat file 
-        run: cat ~/config-release-builder/config.json
