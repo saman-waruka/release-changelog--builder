@@ -13,7 +13,7 @@
           "labels": ["dependencies"]
       },
       {
-          "title": "## 🔄 Dependencies",
+          "title": "## 🔄 Refactor Code",
           "labels": ["refactor-code"]
       }
   ]
