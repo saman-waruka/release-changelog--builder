@@ -1,7 +1,7 @@
-# ทำ chage log สวยๆ เมื่อมีการ push tag ด้วย Release [Changelog Builder](https://github.com/marketplace/actions/release-changelog-builder) 
+# ทำ Release chage log สวย ๆ เมื่อมีการ push tag ด้วย [Release Changelog Builder](https://github.com/marketplace/actions/release-changelog-builder) 
 
 
-## 1. เตรียม label ที่เราจะใช้ generate change log (แล้วจะนำไปใช้ต่อในการ config Release Changelog Builder) 
+## 1. เตรียม label ที่เราจะใช้สำหรับสร้าง change log (สร้างแล้วจะนำไปใช้ต่อในการ config ของ Release Changelog Builder หรือ จะใช้ label ที่มีอยู่แล้วก็ได้ แล้ว config ตาม) 
 ในที่นี้จะสร้างเป็น    
 - feature
 - fix 
