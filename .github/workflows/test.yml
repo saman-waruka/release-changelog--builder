@@ -1,0 +1,10 @@
+name: 'CI Release Changelog Builder'
+on:
+  push:
+
+
+  echopath:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Cat path 
+        run: cat ~/.github/config-release-changelog-builder.json
