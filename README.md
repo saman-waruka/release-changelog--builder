@@ -6,6 +6,7 @@
 - feature
 - fix 
 - dependencies
+- refactor-code
 ### ปล. Add Label โดยการไปที่ Repository  > เลือก Pull Request  > คลิกที่ Label <br /><br />
 
 
@@ -13,8 +14,8 @@
 [ดูตัวอย่างที่นี่](https://github.com/mikepenz/release-changelog-builder-action/releases/tag/v0.9.0)
 <br /><br />
 
-## 2. สร้างไฟล์ config-release-changelog-builder.json ( ที่จริงชื่ออะไรก็ได้ ) ในโฟลเดอร์ .github
-
+## 2. สร้างไฟล์ config-release-builder.json ( ที่จริงชื่ออะไรก็ได้  แต่ต้องไปใส่ชื่อให้ตรงกัน ในไฟล์ .yml ) ในโฟลเดอร์ของโปรเจค 
+ไฟล์นี้จะเป็น config ว่า PR นั้น ๆ จะจัดอยู่ในกลุ่มไหน ดูจาก label อะไร
 ```
 {
   "categories": [
@@ -29,6 +30,10 @@
       {
           "title": "## 📦 Dependencies",
           "labels": ["dependencies"]
+      },
+      {
+          "title": "## 🔄 Refactor Code",
+          "labels": ["refactor-code"]
       }
   ]
 }
@@ -36,26 +41,29 @@
 <br /><br />
 
 ## 3. สร้างไฟล์ release-changelog-builder.yml ( ที่จริงชื่ออะไรก็ได้ ) ในโฟลเดอร์  .github/workflow
+
+นำ ชื่อไฟล์จากข้อ 2  ไปใส่ตรง  with configuration ของ  mikepenz/release-changelog-builder-action@v1
+หน้าตาก็จะออกมาประมาณนี้
 ```
 name: 'CI Release Changelog Builder'
 on:
   push:
     tags:
       - '*'
-
 jobs:
   release:
     if: startsWith(github.ref, 'refs/tags/')
     runs-on: ubuntu-latest
     steps:
+      - name: Checkout
+        uses: actions/checkout@v2
       - name: Build Changelog
         id: github_release
         uses: mikepenz/release-changelog-builder-action@v1
         with:
-          configuration: ".github/config-release-changelog-builder.json"
+          configuration: "config-release-builder.json"
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-
       - name: Create Release
         uses: actions/create-release@v1
         with:
@@ -65,6 +73,18 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 ```
+<br/>
+
+## 4. โครงร้างโปรเจคจะออกมาแบบนี้
+```
+root
+  |__  .github
+  |        |__ workflow
+  |              |__ release-changelog-builder.yml
+  |
+  |__ config-release-builder.json
+```
+
 <br /><br />
 # [ดูตัวอย่างที่นี่](https://github.com/mikepenz/release-changelog-builder-action/releases/tag/v0.9.0)
 ^_^ ^o^
