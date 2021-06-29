@@ -6,5 +6,11 @@ jobs:
   echopath:
     runs-on: ubuntu-latest
     steps:
-      - name: Cat path 
+      - name: PWD
+        run: pwd
+      - name: list file 
+        run: ls -la
+      - name: Cat file 
         run: cat ~/.github/config-release-changelog-builder.json
+      - name: Cat file 2  
+        run: cat .github/config-release-changelog-builder.json
