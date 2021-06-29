@@ -9,8 +9,8 @@ jobs:
       - name: PWD
         run: pwd
       - name: list file 
-        run: ls -la
-      - name: Cat file 
-        run: cat ~/.github/config-release-changelog-builder.json
+        run: ls 
       - name: Cat file 2  
         run: cat .github/config-release-changelog-builder.json
+      - name: Cat file 
+        run: cat ~/.github/config-release-changelog-builder.json
