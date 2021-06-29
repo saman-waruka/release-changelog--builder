@@ -2,7 +2,7 @@ name: 'CI Release Changelog Builder'
 on:
   push:
 
-
+jobs:
   echopath:
     runs-on: ubuntu-latest
     steps:
