@@ -1,5 +1,5 @@
-# ทำ chage log สวยๆ เมื่อมีการ push tag ด้วย Release Changelog Builder 
-(https://github.com/marketplace/actions/release-changelog-builder)
+# ทำ chage log สวยๆ เมื่อมีการ push tag ด้วย Release [Changelog Builder](https://github.com/marketplace/actions/release-changelog-builder) 
+
 
 ## 1. เตรียม label ที่เราจะใช้ generate change log (แล้วจะนำไปใช้ต่อในการ config Release Changelog Builder) 
 ในที่นี้จะสร้างเป็น    
@@ -7,11 +7,13 @@
 - fix 
 - dependencies
 - refactor-code
-### ปล. Add Label โดยการไปที่ Repository  > เลือก Pull Request  > คลิกที่ Label <br /><br />
+#### ปล. Add Label โดยการไปที่ Repository  > เลือก Pull Requests  > คลิกที่ Label <br /><br />
 
 
-### ตอนที่เรา PR ก็ให้ใส่ label ไว้ด้วย ตอน push tag Release ก็จะมีสรุปให้เราด้วยว่า release นี้ มี feature อะไร fix อะไร  ที่ PR ไหน 
-[ดูตัวอย่างที่นี่](https://github.com/mikepenz/release-changelog-builder-action/releases/tag/v0.9.0)
+### ตอนที่เรา Pull Request ก็ให้ใส่ label ไว้ด้วย ตอน push tag Release ก็จะมีสรุปให้เราด้วยว่า release นี้ มี feature อะไร fix อะไร  ที่ Pull Request ไหน 
+<br />
+
+## [ดูตัวอย่างที่นี่ PR](https://github.com/saman-waruka/release-changelog--builder/pull/18)
 <br /><br />
 
 ## 2. สร้างไฟล์ config-release-builder.json ( ที่จริงชื่ออะไรก็ได้  แต่ต้องไปใส่ชื่อให้ตรงกัน ในไฟล์ .yml ) ในโฟลเดอร์ของโปรเจค 
@@ -86,7 +88,10 @@ root
 ```
 
 <br /><br />
-# [ดูตัวอย่างที่นี่](https://github.com/mikepenz/release-changelog-builder-action/releases/tag/v0.9.0)
+# [ดูตัวอย่าง Official ที่นี่](https://github.com/mikepenz/release-changelog-builder-action/releases)
+# [ดูตัวอย่าง ของ Repository นี้](https://github.com/saman-waruka/release-changelog--builder/releases)
+
+
 ^_^ ^o^
 <br /><br />
 ปล. ถ้าเจอ error หน้าตาแบบนี้ไ่ต้องตกใจ จะเป็นเฉพาะ push tag แรก 
