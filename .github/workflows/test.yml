@@ -13,6 +13,6 @@ jobs:
       - name: list file 
         run: ls 
       - name: Cat file 2  
-        run: cat .github/config-release-changelog-builder.json
+        run: cat config-release-builder/config.json
       - name: Cat file 
-        run: cat ~/.github/config-release-changelog-builder.json
+        run: cat ~/config-release-builder/config.json
