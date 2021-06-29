@@ -11,6 +11,10 @@
       {
           "title": "## 📦 Dependencies",
           "labels": ["dependencies"]
+      },
+      {
+          "title": "## 🔄 Dependencies",
+          "labels": ["refactor-code"]
       }
   ]
 }
