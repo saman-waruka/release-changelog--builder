@@ -20,7 +20,7 @@
    - คำอธิบาย :  ไว้บอกว่ามีการ Hot fix (ใน changelog จะดึงตรงนี้ไปแสดง)
 - security
    - สี  : ![#ee0701](https://via.placeholder.com/15/ee0701/000000?text=+) `#ee0701` 
-   - คำอธิบาย :  ไว้บอกว่ามีการ Hot fix (ใน changelog จะดึงตรงนี้ไปแสดง)
+   - คำอธิบาย :  ไว้บอกว่ามีการเปลี่ยนแปลงในเรื่อง security  (ใน changelog จะดึงตรงนี้ไปแสดง)
 
 #### ปล. Add Label โดยการไปที่ Repository  > เลือก Pull Requests  > คลิกที่ Label <br /><br />
 
