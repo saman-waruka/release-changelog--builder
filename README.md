@@ -54,7 +54,7 @@
       },
       {
           "title": "## 🔧🔨 Hot fix",
-          "labels": ["Hot fix"]
+          "labels": ["Hotfix"]
       },
       {
           "title": "## 🔒 Security",
@@ -84,6 +84,7 @@ on:
 jobs:
   release:
     if: startsWith(github.ref, 'refs/tags/')
+    # runs-on: [self-hosted, linux]
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
