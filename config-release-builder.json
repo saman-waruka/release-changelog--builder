@@ -1,20 +1,28 @@
 {
-  "categories": [
-      {
-          "title": "## 🚀 Features",
-          "labels": ["feature"]
-      },
-      {
-          "title": "## 🐛 Fixes",
-          "labels": ["fix"]
-      },
-      {
-          "title": "## 📦 Dependencies",
-          "labels": ["dependencies"]
-      },
-      {
-          "title": "## 🔄 Refactor Code",
-          "labels": ["refactor-code"]
-      }
-  ]
-}
+    "categories": [
+        {
+            "title": "## 🚀 Features",
+            "labels": ["feature"]
+        },
+        {
+            "title": "## 🐛 Fixes",
+            "labels": ["fix"]
+        },
+        {
+            "title": "## 📦 Dependencies",
+            "labels": ["dependencies"]
+        },
+        {
+            "title": "## 🔄 Refactor Code",
+            "labels": ["refactor-code"]
+        },
+        {
+            "title": "## 🔧🔨 Hot fix",
+            "labels": ["Hot fix"]
+        },
+        {
+            "title": "## 🔒 Security",
+            "labels": ["security"]
+        }
+    ]
+  }
